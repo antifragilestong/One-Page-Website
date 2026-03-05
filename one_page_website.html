@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="K W" content="CSS and HTML  />
+	<title>One Page Website Assignment</title>
+</head>
+
+<body>
+
+	<!------NAV-------->
+	<div>
+		<div>
+			<nav>
+				<ul>
+
+					<a href="#home"></a>
+					<li style="position:fixed;top:2%;left:13%">HOME PAGE</li></a>
+					<a href="#gallery">
+					<li style="position:fixed;top:5%;left:13%">Dogs' GALLERY</li></a>
+					<a href="#contact">
+					<li style="position:fixed;top:8%;left:13%">VISIT BOOKING</li></a>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-----END NAV---->
+	<!-----HOME---->
+	<div id="home">
+		<div>
+			<div>
+				<p style="position:fixed;top:10%;left:12%;font-family:Arial; font-size:25px;height:150px;width:1000px;background-color:antiquewhite">The Dogs Website provides lovely <span style="color:blue;font-weight:bold">pictures</span> given from my friends. It is a free of charge website which allows users to view and to apply for a visit to the interested dogs. Please press Dogs' GALLERY to view the dog's pictures. If you feel you need to take a closer look at any one, please press VISIT BOOKING to arrange a visit.' </p>
+			</div>
+		</div>
+	</div>
+	<!-----END HOME---->
+	<!-----GALLERY---->
+	<section>
+		<div id="gallery">
+			<h1 style="font-family:'Bookman Old Style';position:fixed;top:31%;left:12%">Dogs Gallery</h1>
+			<div>
+				<!--Photo  1-->
+				<div>
+					<div>
+						<a href="./images/thumb/Conor.png" target="_blank" ">
+							<img src="./images/thumb/Conor.png" alt="Click to enlarge" style="position:fixed;top:39%;left:12%;width:250px;height:200px; cursor:pointer;" />
+							<!--<p style="position:absolute; top: 70%; left: 6%;">Conor is living in Canada.</p>-->
+						</a>
+						</a>
+
+						<div style="position: absolute; top: 59%; left: 15%;">
+							<h3>Click to Enlarge</h3>
+						</div>
+					</div>
+				</div>
+				<!--End Photo 1-->
+				<!--Photo  2-->
+				<div>
+					<div>
+						<a href="./images/thumb/janetdog.png" target="_blank" ">
+							<img src="./images/thumb/janetdog.png" alt="Click to enlarge" style="position:fixed;top:39%;left:26%;width:200px;height:230px; cursor:pointer;" />
+							
+						</a>
+						<div style="position: absolute; top: 59%; left: 28%;">
+							<h3>Click to Enlarge</h3>
+						</div>
+					</div>
+				</div>
+				<!--End Photo 2-->
+				<!--Photo  3-->
+				<div>
+					<div>
+						<a href="./images/thumb/Snowly.png" target="_blank" ">
+							<img src="./images/thumb/Snowly.png" alt="Click to enlarge" style="position:fixed;top:39%;left:38%;width:210px;height:230px; cursor:pointer;" />
+
+						</a>
+						<div style="position: absolute; top: 59%; left: 40%;">
+							<h3>Click to Enlarge</h3>
+						</div>
+					</div>
+				</div>
+				<!--End Photo 3-->
+				<!--Photo  4-->
+				<div>
+					<div>
+						<a href="./images/thumb/smiley.png" target="_blank" ">
+							<img src="./images/thumb/smiley.png" alt="Click to enlarge" style="position:fixed;top:39%;left:51%;width:260px;height:220px; cursor:pointer;" />
+
+						</a>
+						<div style="position: absolute; top: 59%; left: 54%;">
+							<h3>Click to Enlarge</h3>
+						</div>
+					</div>
+				</div>
+				<!--End Photo 4-->
+
+
+			</div>
+		</div>
+
+	</section>
+
+	<!----End Gallery---->
+
+	<!----Video section-->
+	<section>
+		<iframe style="position:absolute;top:64%;left:53%"  width="560"
+				height="315"
+				src="./images/20698945-hd_1080_1920_30fps.mp4"
+				title="Video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen>
+		</iframe>
+
+	</section>
+
+	<!----Booking--->
+	<section>
+		<div id="contact" role="navigation">
+			<div>
+				<h1 style="position: absolute; top: 68%; left: 12%;font-family:'Bookman Old Style'">Dog's home Booking</h1>
+				<div>
+					<h2 style="position:absolute;top:72%;left:12%;">Please fill the below form to reserve the home visit for your interested dog.<br /><span style="color:blue;font-weight:bold">Don't miss the chance!</span></h2>
+				</div>
+			</div>
+		</div>
+		<div>
+			<form action="" method="post">
+				<label style="position:absolute;top:81%;left:12%;" for="fname">First name:</label>
+				<input style="position:absolute;top:81%;left:16%;" class="rsvp" type="text" value="" id="fname" name="fname" />
+				<label style="position:absolute;top:81%;left:27%;" for="lname">Last name:</label>
+				<input style="position:absolute;top:81%;left:31%;" class="rsvp" type="text" value="" id="lname" name="lname" /><br />
+				<label style="position:absolute;top:84%;left:12%;" for="yemail">Email address:</label>
+				<input style="position:absolute;top:84%;left:17%;" class="rsvp" type="text" value="" id="yemail" name="yemail" />
+				<label style="position:absolute;top:84%;left:27%;" for="dname">Name of the dog you want to visit:</label>
+				<input style="position:absolute;top:84%;left:39%;" class="rsvp" type="text" value="" id="dname" name="dname" /><br />
+				<label style="position:absolute;top:87%;left:12%;" for="visitday">Date of visit:</label>
+				<input style="position:absolute;top:87%;left:17%;" type="date" id="visitday" name="visitday">
+				<input style="position:absolute;top:90%;left:12%;"  type="submit" formmethod="post" value="Submit (we will reply by email after submission)">
+			</form>
+		</div>
+	</section>
+
+	<!---End Booking---->
+</body>
+
+
+
+
+<footer>
+	<p style="position:absolute;top:93%;left:10%">
+		<a href="https://www.google.com/">https://www.google.com</a>
+	</p>
+	<p><h6 style="position:absolute;top:95%;left:10%">@2026 One Page Website Assignment. All rights reserved. &copy;</h6></p>
+
+
+</footer>
+
+
+
+</html>
+
