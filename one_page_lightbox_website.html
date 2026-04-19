@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Javascript assignment</title>
+	<meta charset="utf-8">
+	<meta name="K Wong" content="Countdown()">
+	<script src="./JS/one_page_website.js"></script>
+	<link rel="stylesheet" type="text/css" href="./CSS/One_Page_CSS.css">
+</head>
+<body>
+	
+
+		<!---Light box Assignment--->
+<h2 style="text-align: center">Lightbox</h2>;		
+<h4 style="text-align: center">Click the pictures to see the lightbox</h4>;
+		
+		<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="./images/thumb/Conor-t1.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/thumb/Janetdog-t1.png" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/thumb/smiley-t1.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/thumb/Snowly-t1.png" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./images/thumb/Conor-wide.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./images/thumb/Janetdog-wide.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./images/thumb/smiley-wide.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./images/thumb/Snowly-wide.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="./images/thumb/Conor-wide.png" onclick="currentSlide(1)" alt="Conor">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/thumb/Janetdog-wide.png" onclick="currentSlide(2)" alt="Janet">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/thumb/smiley-wide.png" onclick="currentSlide(3)" alt="Smiley">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/thumb/Snowly-wide.png" onclick="currentSlide(4)" alt="Snowy">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+	
+</body>
+
+</html>
